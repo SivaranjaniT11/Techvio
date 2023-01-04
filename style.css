@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+.navbar{
+      background: linear-gradient(to top, #370b6f, #00429b);
+
+}
+.master{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 800px;
+    background: linear-gradient(to top, #370b6f, #00429b , #00429b);
+}
+.master .shape{
+position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.itsolution h1{
+    font-size: 53px;  
+}
+#service .card:hover{
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+}
+.head-1 h2 {
+    font-size: 40px;
+    color: #0b0b31;
+    font-weight: bold;
+}
+.head-1 h6{
+    color: #FF9800;
+    font-family: 'Dosis', sans-serif;
+}
+
+.section-card-1 .card i , .section-card-1 .card h5 , .section-card-1 .card .card-link ,.choose-text h6{
+    color: #FF9800;
+}
+.about-content-text h6{
+    color: #7b68ee;
+}
+.about-content-text .skill-item h6 em{
+    float: right;
+}
+.about-btn-box{
+    border: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    color: #ffffff;
+    background-color: #7b68ee;
+    transition: 0.4s;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0 7px 25px rgb(123 104 238 / 25%);
+}
+.about-btn-box:hover {
+    background-color: #00429b;
+    animation-direction: alternate-reverse;
+}
+.about-img{
+    position: relative;
+    margin-left: 10%;
+}
+.about-img .years-design {
+    position: absolute;
+    bottom: 75px;
+    text-align: left;
+    padding: 20px 40px 40px 40px;
+    background: #ffffff;
+    border-bottom: 2px solid #FF9800;
+    box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
+}
+.features-list .box-3
+{
+    position: relative;
+   background:none;
+   padding: 15px 15px;
+   color: black;
+   border-left:3px solid #7b68ee;
+   border-radius: 10px; 
+}
+.features-list .box-3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+    border-radius:10px;
+    background-color: #7b68ee;
+    z-index: -1;
+    transition: 0.4s;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+.features-list .box-3:hover{
+    color: white;
+}
+.features-list .box-3:hover::before{
+    transform: scaleX(1);
+}
+.img-2{
+    background-image: url('images/banner-bg.png');
+    height:30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.pic{
+    font-weight: bold;
+    background-color: #03030c;
+    opacity: 0.7;
+    height:30vh;
+    color: white;
+
+}
+
+.client h6{
+    color: #FF9800;
+}
+.box-1{
+    height:60vh;
+    width:50vh;
+}
+.box-1 i{
+    color: #FF9800;
+}
+.im-1{
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    width: 90px;
+    margin: 0 auto;
+    border-left-color: #7b68ee;
+    border-bottom-color: #7b68ee;
+}
+.link a{
+     color: gray;
+}
+.img-4{
+    background: url('images/banner-bg.png'),no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+}
+.conten-text{
+    z-index: -1;
+    background-color: #03030c;
+    opacity: 0.8;
+    width: 100%;
+    height: 50vh;
+}
+.news{
+    width: 100%;
+    height:25vh;
+}
+.block {
+    width: 100%;
+    height:8vh;
+}
+#contact  .box1{
+    width:100%;
+    height: 100%;
+    background-color: white;
+    border-top:3px solid #7b68ee;
+}
+#contact-1 input, #contact-1 .form-floating{
+    border-left:4px solid #7b68ee;
+    border-radius: 10px;   
+}
+@media  (max-width: 576px){
+   
+    .news{
+        width: 100%;
+        height:50vh;
+    }
+    .master img{
+        width: 100%;
+    }
+    .master{
+        height:160vh;
+    }
+    .img-2{
+        background-image: url('images/banner-bg.png');
+        height:60vh;
+    }
+    .pic{
+        height:60vh;    
+    }
+    .box-1{
+        height:80vh;
+        width:50vh;
+    }
+    .img-4{
+        width: 100%;
+        height:75vh;
+    }
+    .conten-text{
+        width: 100%;
+        height: 75vh;
+    }
+    .block {
+        width: 100%;
+        height:20vh;
+    }
+   
+}
